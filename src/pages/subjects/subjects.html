@@ -1,0 +1,17 @@
+<ion-header> 
+  <ion-navbar color="primary">
+      <ion-icon name="menu"  style="padding: 10px; font-size: 27px;"></ion-icon>
+    <ion-title >Subject</ion-title>
+      <ion-icon name="notifications" class="notification" style="  float: right;padding: 10px; font-size: 27px;"></ion-icon>
+  </ion-navbar>
+</ion-header>
+
+<ion-content >
+ 
+<ion-list>
+<button ion-item *ngFor="let item of items" style="padding: 18px;">
+  <ion-icon name="book"></ion-icon>  {{ item }}
+  </button>  
+</ion-list>
+
+</ion-content>

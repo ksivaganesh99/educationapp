@@ -22,6 +22,10 @@ export class HomePage {
             image : "assets/images/slide3.png"
             },
             ];
+            mySlideOptions = {
+    
+    pager: true
+  };
   constructor(public navCtrl: NavController) {
     
   }

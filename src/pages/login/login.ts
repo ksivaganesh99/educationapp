@@ -2,24 +2,24 @@ import { Component } from '@angular/core';
 
 import { NavController } from 'ionic-angular';
 
-import { LoginPage } from '../login/login';
+import { RegistrationPage } from '../registration/registration';
 
 import { SubjectsPage } from '../subjects/subjects';
 
 import { TabsPage } from '../tabs/tabs';
 
 @Component({
-  selector: 'registration-page',
-  templateUrl: 'registration.html'
+  selector: 'login-page',
+  templateUrl: 'login.html'
 })
-export class RegistrationPage {
+export class LoginPage {
  
   constructor(public navCtrl: NavController) {
     
   }
-login(){
+gotoregister(){
 
-    this.navCtrl.push(LoginPage);
+  this.navCtrl.push(RegistrationPage);
 }
 gotosubject(){
    this.navCtrl.push(TabsPage);

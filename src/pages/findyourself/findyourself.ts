@@ -4,25 +4,18 @@ import { NavController } from 'ionic-angular';
 
 import { LoginPage } from '../login/login';
 
-import { SubjectsPage } from '../subjects/subjects';
-
-import { TabsPage } from '../tabs/tabs';
-
 @Component({
-  selector: 'registration-page',
-  templateUrl: 'registration.html'
+  selector: 'findyourself-page',
+  templateUrl: 'findyourself.html'
 })
-export class RegistrationPage {
- 
+export class FindyourselfPage {
+ items = ["Personality test","Aptitude test","Interest test","Skill builder"];
   constructor(public navCtrl: NavController) {
     
   }
 login(){
 
     this.navCtrl.push(LoginPage);
-}
-gotosubject(){
-   this.navCtrl.push(TabsPage);
 }
 
 }
