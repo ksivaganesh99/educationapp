@@ -1,0 +1,42 @@
+<ion-header style="background-color: #387ef5">
+    <ion-title><ion-icon name="contact" style="font-size:7em;color:#e0e0e0;" class="ion-ios-contact:before"></ion-icon></ion-title>
+
+  </ion-header>
+
+  <ion-content>
+    <ion-list >
+
+  <ion-item>
+    <ion-label floating>Name</ion-label>
+    <ion-input type="text"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label floating>Mobile No</ion-label>
+    <ion-input type="number"></ion-input>
+  </ion-item>
+ <ion-item>
+    <ion-label floating>Email Id</ion-label>
+    <ion-input type="email"></ion-input>
+  </ion-item>
+   <ion-item>
+    <ion-label >standard</ion-label>
+    <ion-select [(ngModel)]="standard" multiple="false">
+      <ion-option value="bacon">4th grade</ion-option>
+      <ion-option value="olives">5th grade</ion-option>
+      <ion-option value="xcheese" >6th grade</ion-option>
+      <ion-option value="peppers">7th grade</ion-option>
+      <ion-option value="mushrooms">8th grade</ion-option>
+      <ion-option value="onions">9th grade</ion-option>
+      <ion-option value="pepperoni">10th grade</ion-option>
+      <ion-option value="pineapple">11th grade</ion-option>
+      <ion-option value="sausage">12th grade</ion-option>
+    </ion-select>
+  </ion-item>
+
+<ion-item>
+<button ion-button large item-center>Register</button>
+</ion-item>
+</ion-list>  
+<h4 item-center>Already registeered? <span >Login</span></h4>
+    </ion-content>

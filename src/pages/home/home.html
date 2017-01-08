@@ -1,14 +1,19 @@
-<ion-header>
-  <ion-navbar>
-    <ion-title>
-      Ionic Blank
-    </ion-title>
-  </ion-navbar>
-</ion-header>
 
-<ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+
+<ion-content >
+    <ion-slides pager>
+    <ion-slide *ngFor="let slide of slides">
+      
+      <img [src]="slide.image" class="slide-image" />
+     
+    </ion-slide>
+    <ion-slide style="background-color: rgb(129, 149, 241)">
+     
+      <h2 class="slide-title">Ready to explore?</h2>
+      <button ion-button large clear icon-right color="light" (click)="nextpage()" >
+        Continue
+        <ion-icon name="arrow-forward"></ion-icon>
+      </button>
+    </ion-slide>
+  </ion-slides>
 </ion-content>
