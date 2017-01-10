@@ -20,7 +20,7 @@
 </ion-header>
 
 <ion-content>
-  <div [ngSwitch]="type">
+  <div [ngSwitch]="type" style="height:100%;">
    <div  *ngSwitchCase="'videos'">
 
   <ion-card>
@@ -97,34 +97,14 @@
 
 </ion-card>
    </div>
-   <div  *ngSwitchCase="'tests'">
-  <ion-card>
-
-  <img src="img/advance-card-map-madison.png">
+   <div  *ngSwitchCase="'tests'" style="height:1000%;">
 
 
-  <ion-item>
-    <ion-icon name="football" item-left large></ion-icon>
-    <h2>Museum of Football</h2>
-    <p>11 N. Way St, Madison, WI 53703</p>
-  </ion-item>
+  <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSekruS26kgYS7TaVb29Ncwv_XNlvC2UnD_FpiEBGJT1rpvQjQ/viewform?embedded=true" width="100%" height="100%" frameborder="0" >Loading...</iframe>
 
-  <ion-item>
-    <ion-icon name="wine" item-left large ></ion-icon>
-    <h2>Institute of Fine Cocktails</h2>
-    <p>14 S. Hop Avenue, Madison, WI 53703</p>
-  </ion-item>
 
-  <ion-item>
-    <span item-left>18 min</span>
-    <span item-left>(2.6 mi)</span>
-    <button ion-button icon-left clear item-right>
-      <ion-icon name="navigate"></ion-icon>
-      Start
-    </button>
-  </ion-item>
 
-</ion-card>
    </div>
+   nmbvmb
   </div>
 </ion-content>

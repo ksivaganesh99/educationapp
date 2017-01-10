@@ -27,9 +27,9 @@ if(page === "MathschaptersPage"){
 } else if(page === "SciencePage"){
      this.navCtrl.push(SciencePage);
 }else if(page === "PreviousPage"){
-     this.navCtrl.push(SciencePage);
+     //this.navCtrl.push(SciencePage);
 }else if(page === "ConceptsPage"){
-     this.navCtrl.push(SciencePage);
+    // this.navCtrl.push(SciencePage);
 }
 }
 }
