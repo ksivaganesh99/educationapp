@@ -1,6 +1,6 @@
 <ion-header> 
   <ion-navbar color="primary">
-      <ion-icon name="menu"  style="padding: 10px; font-size: 27px;"></ion-icon>
+      <ion-icon name="menu"  style="float: left;padding: 10px; font-size: 27px;"></ion-icon>
     <ion-title >Subject</ion-title>
       <ion-icon name="notifications" class="notification" style="  float: right;padding: 10px; font-size: 27px;"></ion-icon>
   </ion-navbar>
@@ -8,10 +8,20 @@
 
 <ion-content >
  
-<ion-list>
-<button ion-item *ngFor="let item of items" style="padding: 18px;">
-  <ion-icon name="book"></ion-icon>  {{ item }}
-  </button>  
-</ion-list>
+
+
+<ion-grid no-padding no-margin>
+<ion-row>
+<ion-col width-50 text-center style="background-color: #ff5c5c;" (click)="descriptionpage('MathschaptersPage')">
+  <ion-icon name="ios-add-circle" style="font-size: 4em;color:aliceblue;"></ion-icon> <ion-icon name="ios-close-circle" style="font-size: 4em;color:aliceblue;"></ion-icon> <ion-icon name="ios-add-circle" style="font-size: 4em;color:aliceblue;"></ion-icon> <ion-icon name="ios-close-circle" style="font-size: 4em;color:aliceblue;"></ion-icon> <ion-icon name="ios-add-circle" style="font-size: 4em;color:aliceblue;"></ion-icon> <ion-icon name="ios-close-circle" style="font-size: 4em;color:aliceblue;"></ion-icon><h4>Mathematics</h4></ion-col>
+  <ion-col width-50 text-center style="background-color: #99e265;" (click)="descriptionpage('SciencePage')"> <ion-icon name="flask" style="font-size: 8em;color: aliceblue;"></ion-icon><h4>Science</h4></ion-col>
+</ion-row>
+<ion-row >
+<ion-col width-50 text-center style="background-color: #2eb2ff;" (click)="descriptionpage('PreviousPage')"> <ion-icon name="md-help" style="font-size: 8em;color:aliceblue;"></ion-icon><h4>Previous Questions</h4></ion-col>
+<ion-col width-50 text-center style="background-color: #b760e6;" (click)="descriptionpage('ConceptsPage')"> <ion-icon name="md-school" style="font-size: 8em;color:aliceblue;"></ion-icon><h4>Concepts</h4></ion-col>
+</ion-row>
+
+</ion-grid>
+
 
 </ion-content>

@@ -8,7 +8,9 @@ import { SubjectsPage } from '../pages/subjects/subjects';
 import { TabsPage } from '../pages/tabs/tabs';
 import { FindyourselfPage } from '../pages/findyourself/findyourself';
 import { MinddiversionPage } from '../pages/minddiversion/minddiversion';
-
+import { SciencePage } from '../pages/science/science';
+import { MathschaptersPage } from '../pages/mathschapters/mathschapters';
+import { MathsvideostestsPage } from '../pages/mathsvideostests/mathsvideostests';
 
 @NgModule({
   declarations: [
@@ -19,8 +21,10 @@ import { MinddiversionPage } from '../pages/minddiversion/minddiversion';
     SubjectsPage,
     TabsPage,
     FindyourselfPage,
-    MinddiversionPage
-
+    MinddiversionPage,
+    SciencePage,
+    MathschaptersPage,
+    MathsvideostestsPage
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -34,7 +38,10 @@ import { MinddiversionPage } from '../pages/minddiversion/minddiversion';
     SubjectsPage,
     TabsPage,
     FindyourselfPage,
-    MinddiversionPage
+    MinddiversionPage,
+    SciencePage,
+    MathschaptersPage,
+    MathsvideostestsPage
   ],
   providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}]
 })

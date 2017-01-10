@@ -1,0 +1,130 @@
+
+<ion-header>
+ <ion-navbar no-border-bottom >
+    <ion-title>
+      {{subjectname}}
+    </ion-title>
+  </ion-navbar>
+
+
+  <ion-toolbar no-border-top>
+    <ion-segment [(ngModel)]="type">
+      <ion-segment-button value="videos">
+        Videos
+      </ion-segment-button>
+      <ion-segment-button value="tests">
+        Tests
+      </ion-segment-button>
+    </ion-segment>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div [ngSwitch]="type">
+   <div  *ngSwitchCase="'videos'">
+
+  <ion-card>
+<iframe width="auto" height="auto" src="https://www.youtube.com/embed/SRJ_8vjU3QY" frameborder="0" allowfullscreen></iframe>
+
+
+  <ion-item>
+    <ion-icon name="videocam" item-left large></ion-icon>
+    <h2>{{subjectname}} video 1</h2>
+  </ion-item>
+
+  <ion-item>
+    <span item-left>18 min </span>
+    <button ion-button icon-left clear item-right>
+      <ion-icon name="heart"></ion-icon>
+      
+    </button>
+  </ion-item>
+
+</ion-card>
+
+<ion-card>
+<iframe width="auto" height="auto" src="https://www.youtube.com/embed/SRJ_8vjU3QY" frameborder="0" allowfullscreen></iframe>
+ 
+
+  <ion-item>
+    <ion-icon name="videocam" item-left large></ion-icon>
+    <h2>{{subjectname}} video 2</h2>
+  </ion-item>
+
+  <ion-item>
+    <span item-left>18 min </span>
+    <button ion-button icon-left clear item-right>
+      <ion-icon name="heart"></ion-icon>
+      
+    </button>
+  </ion-item>
+
+</ion-card>
+<ion-card>
+<iframe width="auto" height="auto" src="https://www.youtube.com/embed/SRJ_8vjU3QY" frameborder="0" allowfullscreen></iframe>
+ 
+
+  <ion-item>
+    <ion-icon name="videocam" item-left large></ion-icon>
+    <h2>{{subjectname}} video 3</h2>
+  </ion-item>
+
+  <ion-item>
+    <span item-left>18 min </span>
+    <button ion-button icon-left clear item-right>
+      <ion-icon name="heart"></ion-icon>
+      
+    </button>
+  </ion-item>
+
+</ion-card>
+<ion-card>
+<iframe width="auto" height="auto" src="https://www.youtube.com/embed/SRJ_8vjU3QY" frameborder="0" allowfullscreen></iframe>
+
+
+  <ion-item>
+    <ion-icon name="videocam" item-left large></ion-icon>
+    <h2>{{subjectname}} video 4</h2>
+  </ion-item>
+
+  <ion-item>
+    <span item-left>18 min </span>
+    <button ion-button icon-left clear item-right>
+      <ion-icon name="heart"></ion-icon>
+      
+    </button>
+  </ion-item>
+
+</ion-card>
+   </div>
+   <div  *ngSwitchCase="'tests'">
+  <ion-card>
+
+  <img src="img/advance-card-map-madison.png">
+
+
+  <ion-item>
+    <ion-icon name="football" item-left large></ion-icon>
+    <h2>Museum of Football</h2>
+    <p>11 N. Way St, Madison, WI 53703</p>
+  </ion-item>
+
+  <ion-item>
+    <ion-icon name="wine" item-left large ></ion-icon>
+    <h2>Institute of Fine Cocktails</h2>
+    <p>14 S. Hop Avenue, Madison, WI 53703</p>
+  </ion-item>
+
+  <ion-item>
+    <span item-left>18 min</span>
+    <span item-left>(2.6 mi)</span>
+    <button ion-button icon-left clear item-right>
+      <ion-icon name="navigate"></ion-icon>
+      Start
+    </button>
+  </ion-item>
+
+</ion-card>
+   </div>
+  </div>
+</ion-content>
