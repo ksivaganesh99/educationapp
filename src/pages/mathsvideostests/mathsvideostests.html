@@ -12,9 +12,13 @@
       <ion-segment-button value="videos">
         Videos
       </ion-segment-button>
+       <ion-segment-button value="pdfs">
+        TextBook
+      </ion-segment-button>
       <ion-segment-button value="tests">
         Tests
       </ion-segment-button>
+     
     </ion-segment>
   </ion-toolbar>
 </ion-header>
@@ -97,7 +101,7 @@
 
 </ion-card>
    </div>
-   <div  *ngSwitchCase="'tests'" style="height:1000%;">
+   <div  *ngSwitchCase="'tests'" style="height:100%;">
 
 
   <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSekruS26kgYS7TaVb29Ncwv_XNlvC2UnD_FpiEBGJT1rpvQjQ/viewform?embedded=true" width="100%" height="100%" frameborder="0" >Loading...</iframe>
@@ -105,6 +109,8 @@
 
 
    </div>
-   
+   <div  *ngSwitchCase="'pdfs'" style="height:100%;">
+<iframe width="100%" height="100%" src="https://s3.amazonaws.com/online.fliphtml5.com/cxkf/wxfu/index.html#p=1" frameborder="0"  allowtransparency>Loading.....</iframe>
+   </div>
   </div>
 </ion-content>
