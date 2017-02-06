@@ -8,6 +8,10 @@ import { SciencePage } from '../science/science';
 
 import { MathschaptersPage } from '../mathschapters/mathschapters';
 
+import { SocialchaptersPage } from '../socialchapters/socialchapters';
+
+import { EnglishchaptersPage } from '../englishchapters/englishchapters';
+
 
 
 
@@ -26,6 +30,11 @@ if(page === "MathschaptersPage"){
     this.navCtrl.push(MathschaptersPage);
 } else if(page === "SciencePage"){
      this.navCtrl.push(SciencePage);
+}else if(page === "SocialchaptersPage"){
+     this.navCtrl.push(SocialchaptersPage);
+}
+else if(page === "EnglishchaptersPage"){
+     this.navCtrl.push(EnglishchaptersPage);
 }else if(page === "PreviousPage"){
      //this.navCtrl.push(SciencePage);
 }else if(page === "ConceptsPage"){

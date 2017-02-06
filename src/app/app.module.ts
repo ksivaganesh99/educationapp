@@ -11,6 +11,9 @@ import { MinddiversionPage } from '../pages/minddiversion/minddiversion';
 import { SciencePage } from '../pages/science/science';
 import { MathschaptersPage } from '../pages/mathschapters/mathschapters';
 import { MathsvideostestsPage } from '../pages/mathsvideostests/mathsvideostests';
+import { SocialchaptersPage } from '../pages/socialchapters/socialchapters';
+import { EnglishchaptersPage } from '../pages/englishchapters/englishchapters';
+
 
 @NgModule({
   declarations: [
@@ -24,7 +27,9 @@ import { MathsvideostestsPage } from '../pages/mathsvideostests/mathsvideostests
     MinddiversionPage,
     SciencePage,
     MathschaptersPage,
-    MathsvideostestsPage
+    MathsvideostestsPage,
+    SocialchaptersPage,
+    EnglishchaptersPage
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -41,7 +46,9 @@ import { MathsvideostestsPage } from '../pages/mathsvideostests/mathsvideostests
     MinddiversionPage,
     SciencePage,
     MathschaptersPage,
-    MathsvideostestsPage
+    MathsvideostestsPage,
+    SocialchaptersPage,
+    EnglishchaptersPage
   ],
   providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}]
 })
